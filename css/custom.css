@@ -1,0 +1,12 @@
+/* Custom styles
+-------------------------------------------------- */
+.masthead{
+    height:290px;
+    background-image:url("../img/lancekey_words.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: 80%;
+
+}
+
+.top-buffer { margin-top:20px; }

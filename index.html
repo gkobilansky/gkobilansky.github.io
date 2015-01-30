@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>Lancekey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gene Kobilansky Personal Site">
+    <meta name="description" content="Gene Kobilansky Portfolio Site">
     <meta name="author" content="Gene Kobilansky">
     <meta name="keywords" content="entrepreneurship, web design, ecommerece, Facebook marketing, social media marketing, blogging, SEO, gkobilansky.com, Gene Kobilansky, digital marketing consulting" />
     
@@ -17,6 +17,7 @@
     <!-- Custom styles -->
 <link href="css/sticky-footer.css" rel="stylesheet">
 <link href="css/tumblr_styles.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
      <!-- Font Awesome -->
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
@@ -40,11 +41,33 @@
 
 </script>
 
+<!-- Scripts -->
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="js/contact_me.js"></script> 
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.8/ouibounce.min.js"></script>
+
+<!--Social Things-->
+<meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:site" content="@gkobilansky" />
+  <meta property="twitter:creator" content="@gkobilansky" />
+  <meta property="twitter:url" content="http://gkobilansky.com/" />
+  <meta property="twitter:domain" content="gkobilansky.com" />
+  <meta property="twitter:title" content="Lancekey" />
+  <meta property="twitter:description" content="Hi there, I'm Gene. I love creative projects and fighting for the underdog." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lancekey" />
+  <meta property="og:description" content="Hi there, I'm Gene. I love creative projects and fighting for the underdog." />
+  <meta property="og:url" content="http://gkobilansky.com/" />
+  <meta property="og:site_name" content="Lancekey" />
+  <meta property="og:image" content="http://gkobilansky.com/img/lancekey_words.png" />
 
   </head>
 <body>
    
 <div id="wrap">
+  <div class="masthead img-responsive"></div>
  <div class="container">
 
   <!-- HEADER -->
@@ -56,7 +79,7 @@
          
          <p class="lead">Hi there,</p> 
          <p class="lead">I love creative projects and fighting for the underdog. Let's get you up &amp; running together.</p>
-     
+  
         
          <p><button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#Contact">Say hello &raquo;</button></p>
       </div><!-- .jumbotron -->
@@ -138,7 +161,7 @@
   
          
           <div class="list-group-item">
-        <dt><span class="glyphicon glyphicon-file"></span> Put together a <a href="http://sample.flowathletics.com">Landing Page</a> to test interest</li>
+        <dt><span class="glyphicon glyphicon-file"></span> Put together a <a href="https://flowathletics.com">Landing Page</a> to test interest</li>
              
              <dd>Conversion on my latest landing page is <strong>up 3324%</strong> vs site avg.</dd> 
               </div>
@@ -192,6 +215,17 @@
   </div>
 </div>
 
+      <div class="row top-buffer">
+  <div class="col-md-4"><p class="text-center"><a href="http://www.iasites.com/">IASites</a></p>
+    <a href="#" data-toggle="modal" data-target="#IASModal">
+      <img src="img/iasites.jpg" class="img-thumbnail" alt="IA Sites - Beautiful Websites That Convert">
+  </div>
+  <div class="col-md-4"><p class="text-center"><a href="http://btsny.org">Beat The Streets</a></p>
+<a href="#" data-toggle="modal" data-target="#BTSModal">
+      <img src="img/beatthestreets.jpg" class="img-thumbnail" alt="Beat The Streets Website">
+  </div>
+</div>
+
 <!-- Modals -->
 
 <div id="ILFModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -214,6 +248,7 @@
         </div>
       </div>
 </div>
+
 
 <div id="CAModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -254,7 +289,66 @@
         </div>
       </div>
 </div>
+
+<div id="IASModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+              <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title" id="myModalLabel">IASites</h4>
+              </div>
+
+              <div class="modal-body">
+              <p class="text-center"><img src="img/iasites.jpg" class="img-responsive"></p>
+              </div>
+
+              <div class="modal-footer">
+                <p class="text-center">IASites is a boutique, technology firm specializing in beautiful Investment Advisor websites with the main goal of converting visitors to customers. This was a project started by myself, a technology guru and an investment advisor  after seeing the dearth of quality websites in the finacial industry.</p>  
+              <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+              </div>
+        </div>
+      </div>
+</div>
+
+<div id="BTSModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+              <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title" id="myModalLabel">Beat The Streets</h4>
+              </div>
+
+              <div class="modal-body">
+              <p class="text-center"><img src="img/iasites.jpg" class="img-responsive"></p>
+              </div>
+
+              <div class="modal-footer">
+                <p class="text-center">Beat the Streets is a non-profit that uses wrestling as the vehicle through which young people achieve their full potential. I was excited to help BTS update their Home page by clarifying purpose, consolidating the news section and including strong calls to action.</p>  
+              <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+              </div>
+        </div>
+      </div>
+</div>
+
       
+    <!-- Used to fire the modal -->
+    <script>
+
+      // if you want to use the 'fire' or 'disable' fn,
+      // you need to save OuiBounce to an object
+      var _ouibounce = ouibounce(document.getElementById('CAModal'), {
+        aggressive: true,
+        timer: 0,
+        callback: function() { console.log('ouibounce fired!'); }
+      });
+
+      $('body').on('click', function() {
+        $('#CAModal').hide();
+      });
+    </script>
+
+    <!-- End Modals -->
+
 <h4>Writing</h4>
 <ul>
           <li><a href="http://flowathletics.com/blog">Flow Athletics Blog</a></li>
@@ -316,13 +410,7 @@
         <p class="text-muted text-center"><img src="img/lancekey_16_white.png"> Lancekey - 2014. All Movie Rights Reserved. Built on <a href="http://getbootstrap.com">Bootstrap</a>, using <a href="http://glyphicons.com/">Glyphicon Halflings</a> and <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>.</p>
       </div>
   </div>
+ 
 
-<!-- Scripts -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-    <script type="text/javascript" src="js/contact_me.js"></script>
-  
   </body>
 </html>
