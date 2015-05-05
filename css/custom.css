@@ -1,12 +1,43 @@
 /* Custom styles
 -------------------------------------------------- */
 .masthead{
-    height:290px;
+    height:15em;
     background-image:url("../img/lancekey_words.png");
     background-repeat:no-repeat;
     background-position:center;
-    background-size: 80%;
+    background-size: 50%;
+    margin-bottom: 2em;
 
 }
 
 .top-buffer { margin-top:20px; }
+
+.btn-primary {
+background-color: #A9A952;
+  border-color: #696917;
+
+}
+
+.btn-primary:hover, .btn-primary:focus {
+	background-color: #696917;
+  border-color: #F6F6BB;
+}
+
+a {
+  color: #696917;
+  background: transparent;
+  }
+
+a:hover {
+  color: #f6f6bb;
+  background: #8a8a33;
+}
+
+.nohighlight a:hover {
+    background: transparent;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+  text-decoration: underline;
+  background-color: #8a8a33;
+}
