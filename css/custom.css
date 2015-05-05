@@ -10,6 +10,14 @@
 
 }
 
+body {
+  background-color: #ffffff;
+  background-image: url("../img/swirl_pattern.png");
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: fixed;
+}
+
 .top-buffer { margin-top:20px; }
 
 .btn-primary {
