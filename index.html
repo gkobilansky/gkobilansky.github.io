@@ -18,11 +18,12 @@
 <link href="css/sticky-footer.css" rel="stylesheet">
 <link href="css/tumblr_styles.css" rel="stylesheet">
 <link href="css/custom.css" rel="stylesheet">
-     <!-- Font Awesome -->
+    <!-- Fonts -->
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 
-<!-- Favicon -->
-
+    <!-- Favicon -->
 <link rel="shortcut icon" href="img/lancekey 100x100.png" type="image/x-icon" />
 
 <!-- Open Links in New Tab, So You Don't Leave -->
@@ -44,8 +45,9 @@
 <!-- Scripts -->
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.8/ouibounce.min.js"></script>
+  <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="js/animation.js"></script>
+
 
 <!--Social Things-->
 <meta property="twitter:card" content="summary_large_image" />
@@ -66,11 +68,11 @@
 <body>
    
 <div id="wrap">
-  <div class="masthead img-responsive"></div>
- <div class="container">
+<header class="masthead"></header>
+<div class="container">
 
   <!-- HEADER -->
-        
+     <div class="section">   
       <div class="jumbotron">
          <h2>Need business focused web development? <br/><small> I can help.</small></h2>
          
@@ -82,65 +84,65 @@
         
          <p><button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#Contact">Say hello &raquo;</button></p>
       </div><!-- .jumbotron -->
+    </div><!-- .section -->
 
-  <!-- CONTACT ME -->
+<!-- CONTACT ME -->
   
 <div id="Contact" class="collapse">
 
 <div class="jumbotron" style="margin-top:1em">
-
 <div class="row">
-      <div class="col-sm-4">
-    <legend>Drop me a line</legend>
-    <hr>
-    <address>
-    <strong>Email:</strong> genek149 (at) gmail.com<br>
-    <strong>Phone:</strong> (347)915-3569<br>
-    <strong>Skype:</strong> g.kobilansky<br>
-    </address>
-      </div>
-    
-<div class="col-sm-8 contact-form">
-<form id="contact"  action="http://formspree.io/genek149@gmail.com" method="post" class="form" role="form" >
+          <div class="col-sm-4">
+              <legend>Drop me a line</legend>
+              <hr>
+              <address>
+              <strong>Email:</strong> genek149 (at) gmail.com<br>
+              <strong>Phone:</strong> (347)915-3569<br>
+              <strong>Skype:</strong> g.kobilansky<br>
+              </address>
+          </div>
+          
+          <div class="col-sm-8 contact-form">
+          <form id="contact"  action="http://formspree.io/genek149@gmail.com" method="post" class="form" role="form" >
 
-  <div class="row">
-      <div class="col-xs-6 col-md-6 form-group">
-      <input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
-      </div>
+                <div class="row">
+                    <div class="col-xs-6 col-md-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
+                    </div>
 
-      <div class="col-xs-6 col-md-6 form-group">
-      <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
-      </div>
-  </div> <!-- row -->
+                    <div class="col-xs-6 col-md-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+                    </div>
+                </div> <!-- row -->
 
-<textarea class="form-control" id="message" name="message" placeholder="Message" rows="7"></textarea>
-<br />
-<div id="success"></div>
- <!-- For success/fail messages -->
-    <div class="row">
-      <div class="col-xs-12 col-md-12 form-group">
+          <textarea class="form-control" id="message" name="message" placeholder="Message" rows="7"></textarea>
+          <br />
+                <div id="success"></div>
+                 <!-- For success/fail messages -->
+                    <div class="row">
+                      <div class="col-xs-12 col-md-12 form-group">
 
 
-      <button class="btn btn-primary pull-right" type="submit">Hello!</button>
-    </div>
-</form>
-      </div><!-- /. contact form-->
+                      <button class="btn btn-primary pull-right" type="submit">Hello!</button>
+                    </div>
+          </form>
+          </div><!-- /. contact form-->
 
 </div><!-- /.row -->
 
 </div><!-- /.jumbotron -->
-</div><!-- /.collapse-->
+</div><!-- /.collapse--> 
 
 </div>
 
-<!-- MORE DETAILS -->
-
 <div class="tabbable">
-         <ul class="nav nav-tabs">
+         <ul class="nav nav-tabs nav-justified">
   <li class="active"><a href="#Experience" data-toggle="tab">Experience</a></li>
+  <li><a href="#Skills" data-toggle="tab">Skills</a></li>
   <li><a href="#Profile" data-toggle="tab">A little more</a></li>
   <li><a href="#Odds" data-toggle="tab">Odds &amp; Ends</a></li>
-  <li><a href="#Tumblngs" data-toggle="tab">Tumblngs</a></li>
+
+ <!-- I need a new blog <li><a href="#Tumblngs" data-toggle="tab">Tumblngs</a></li> -->
 </ul>
 <div class="tab-content well">
 
@@ -149,18 +151,16 @@
       <div id="Profile" class="tab-pane">
      
         <h3>About You &amp; Me</h3>
-        <p>After 5 years in management consulting, I realized I need a break from the <a href="http://www.linkedin.com/in/gkobilansky">corporate world</a>. I'd rather <strong>collaborate with progressive companies</strong>, coach wrestling and always continue learning.</p>
+        <p>After 5 years in management consulting with the Fortune 500, I've created a new path for myself. Today, I'm focused on <strong>collaborating with progressive companies</strong>, building <a href="http://wealthbot.io">disruptive open source projects</a>, coaching wrestling and a non-stop attitude towards learning.</p>
 
         <p>This site is dedicated to helping entrepreneurs.</p>
-        <p>I've fallen in <em>love with the process of getting started</em>, learned how to <strong>finish strong</strong> and now want to help others.</p>
-          <br/>
         <h4>Are you ready? I can help:</h4>
         <dl class="list-group">
           
   
          
           <div class="list-group-item">
-        <dt><span class="glyphicon glyphicon-file"></span> Put together a <a href="https://flowathletics.com/flow">Landing Page</a> to test interest</li>
+        <dt><span class="glyphicon glyphicon-file"></span> Put together a <a href="https://flowathletics.com/flow">Landing Page</a> to test interest for your idea.</li>
              
              <dd>Conversion on my latest landing page is <strong>up 3324%</strong> vs site avg.</dd> 
               </div>
@@ -168,12 +168,12 @@
           <dt><span class="glyphicon glyphicon-home"></span> Get your first website up and running</dt>
     
 
-            <dd>Compared to last year's period, bounce rate is <strong>down 89.89%</strong>.</dd>
+            <dd>Drop bounce rate as much as <strong>down 89.89%</strong>.</dd>
           </div>
 
           <div class="list-group-item">
             <dt><span class="glyphicon glyphicon-shopping-cart"></span> Add PayPal or a shopping cart so you can kickstart revenue</dt>
-            <dd>We now accept credit cards, Paypal, subscriptions and BitCoin.</dd>
+            <dd>Accept credit cards, Paypal, subscriptions and BitCoin.</dd>
           </div>
           <div class="list-group-item">
           <dt><span class="glyphicon glyphicon-book"></span> Map out &amp; execute your content, PR &amp; social media strategy</dt>
@@ -183,8 +183,13 @@
           <dt><span class="glyphicon glyphicon-cloud-upload"></span> Migrate to a faster host &amp; other annoying technical tweaks</dt>
           <dd>Average page download times are <strong>down 56.53%</strong>.</dd>
         </div>
+          <div class="list-group-item">
+          <dt><i class="fa fa-comments"></i> Have a business, but not sure how I can? Let's talk.</dt>
+          <dd>I have 7 years experience taking vague ideas and converting them to digital solutions.</dd>
+        </div>
         </dl>
-        <p>Most importantly, <em>I teach</em>. Here's what was drilled into my head as a consultant: <blockquote>Effective teaching is the only way to empower others for change.</blockquote> The people in the organization  <em>have to learn</em> the new way of doing things or otherwise there's no improvement. And that's my job. So, let's make sure that every step along the way, <strong>you're learning</strong>.</p>
+        <p>Most importantly, <em>I teach</em>. 
+          <blockquote>Effective teaching is the only way to empower others for change.</blockquote> The people in your organization  <em>have to learn</em> the new way of doing things or otherwise there's no improvement. And that's my job. So, let's make sure that every step along the way, <strong>you're learning</strong>.</p>
         <p>Sincerely,</p>
         <img src="img/online signature.png">
         <p>Gene Kobilansky</p>
@@ -358,25 +363,6 @@
       </div>
 </div>
 
-      
-    <!-- Used to fire the modal -->
-    <script>
-
-      // if you want to use the 'fire' or 'disable' fn,
-      // you need to save OuiBounce to an object
-      var _ouibounce = ouibounce(document.getElementById('CAModal'), {
-        aggressive: true,
-        timer: 0,
-        callback: function() { console.log('ouibounce fired!'); }
-      });
-
-      $('body').on('click', function() {
-        $('#CAModal').hide();
-      });
-    </script>
-
-    <!-- End Modals -->
-
 <h4>Writing</h4>
 <ul>
           <li><a href="http://flowathletics.com/blog">Flow Athletics Blog</a></li>
@@ -396,6 +382,131 @@
   
 
       </div>
+<!-- Skills -->
+ <div id="Skills" class="tab-pane">
+          
+<h3>Skills</h3>
+        <br />
+<h4>Functional</h4>
+        <div class="row top-buffer">
+  <div class="col-md-4"><p class="text-center">Requirements Gathering</p>
+   <div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    <span class="sr-only">100%</span>
+  </div>
+</div>
+</div>
+  <div class="col-md-4"><p class="text-center">Process Architecture</p>
+<div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    <span class="sr-only">100%</span>
+  </div>
+  </div>
+</div>
+   <div class="col-md-4">
+    <p class="text-center">Project Management</p>
+    <div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    <span class="sr-only">100%</span>
+  </div>
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-4"><p class="text-center">Marketing</p>
+   <div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+    <span class="sr-only">75%</span>
+  </div>
+</div>
+</div>
+  <div class="col-md-4"><p class="text-center">eCommerce</p>
+<div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">80%</span>
+  </div>
+  </div>
+</div>
+   <div class="col-md-4">
+    <p class="text-center">Analytics</p>
+    <div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60%</span>
+  </div>
+  </div>
+</div>
+</div>
+
+<h4>Technical</h4>
+      <div class="row top-buffer">
+  <div class="col-md-4"><p class="text-center">HTML</p>
+   <div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    <span class="sr-only">100%</span>
+  </div>
+</div>
+</div>
+  <div class="col-md-4"><p class="text-center">CSS</p>
+<div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    <span class="sr-only">100%</span>
+  </div>
+  </div>
+</div>
+   <div class="col-md-4">
+    <p class="text-center">Javascript</p>
+    <div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">80%</span>
+  </div>
+  </div>
+</div>
+</div>
+<div class="row top-buffer">
+  <div class="col-md-4"><p class="text-center">PHP</p>
+   <div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+    <span class="sr-only">75%</span>
+  </div>
+</div>
+</div>
+  <div class="col-md-4"><p class="text-center">MySQL</p>
+   <div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+    <span class="sr-only">75%</span>
+  </div>
+</div>
+</div>
+</div>
+
+<h4>Tools</h4>
+
+      <div class="row top-buffer">
+  <div class="col-md-4"><p class="text-center">Wordpress</p>
+   <div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    <span class="sr-only">100%</span>
+  </div>
+</div>
+</div>
+  <div class="col-md-4"><p class="text-center">Git</p>
+<div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+    <span class="sr-only">90%</span>
+  </div>
+  </div>
+</div>
+   <div class="col-md-4">
+    <p class="text-center">Bootstrap</p>
+    <div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    <span class="sr-only">100%</span>
+  </div>
+  </div>
+</div>
+</div>
+
+</div>      
 
 <!-- Odds & Ends -->
 

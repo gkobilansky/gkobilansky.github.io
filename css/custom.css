@@ -1,13 +1,45 @@
 /* Custom styles
 -------------------------------------------------- */
-.masthead{
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bitter';
+}
+p, div {
+    font-family: 'Raleway';
+}
+
+.masthead {
     height:15em;
     background-image:url("../img/lancekey_words.png");
     background-repeat:no-repeat;
     background-position:center;
     background-size: 50%;
     margin-bottom: 2em;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
 
+.smaller {
+   background-image:url("../img/lancekey_symbol.png");
+   width: 20%;
+    z-index: -1;
+  }
+
+@media all and (max-width: 1085px) {
+  .smaller {
+    display: none !important;
+  }
+  .masthead {
+    background-size: 70%;
+  }
 }
 
 body {
@@ -17,6 +49,8 @@ body {
   background-position: top left;
   background-attachment: fixed;
 }
+
+.section  {padding-top: 15em;}
 
 .top-buffer { margin-top:20px; }
 
@@ -48,4 +82,8 @@ a:hover {
 .nav>li>a:hover, .nav>li>a:focus {
   text-decoration: underline;
   background-color: #8a8a33;
+}
+
+.progress-bar {
+  background-color: #A0A04A;
 }
